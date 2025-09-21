@@ -1,6 +1,6 @@
 <div class="">
     <h1 class="text-2xl font-bold text to-blue-500">
-        SImple Counter
+        COmplex Counter
     </h1>
 
 
