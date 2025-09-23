@@ -2,7 +2,7 @@
     <form wire:submit='submit' class="w-1/3 flex flex-wrap gap-2 m-3">
         <div>
             <label for="">Bird Count</label>
-            <input type="number" wire:model='count' class="border">
+            <input type="number" wire:model='birdCount' class="border">
         </div>
         <div>
             <label for="">Notes</label>

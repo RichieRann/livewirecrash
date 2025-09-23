@@ -11,7 +11,7 @@
 
 <body>
     <div class="flex flex-wrap w-full gap-5">
-        <livewire:bird-form />
+        <livewire:bird-form :birdCount='2' />
         <livewire:counter />
     </div>
 
