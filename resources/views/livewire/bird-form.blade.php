@@ -20,12 +20,13 @@
                     <th class="border border-gray-300">No</th>
                     <th class="border border-gray-300">Bird Count</th>
                     <th class="border border-gray-300">Notes</th>
+                    <th class="border border-gray-300">Action</th>
                 </tr>
             </thead>
             <tbody>
 
                 @forelse ($entries as $entry)
-                    <tr>
+                    <tr wire:key='entry-{{ $entry->id }}'>
                         <td>
                             {{ $loop->iteration }}
                         </td>
@@ -34,6 +35,10 @@
                         </td>
                         <td class="border border-gray-300">
                             {{ $entry->notes }}
+                        </td>
+                        <td class="p-1">
+                            <button wire:click='delete({{ $entry->id }})'
+                                class="p-1 text-xs rounded bg-red-400 hover:bg-red-500 active:bg-red-300">🗑</button>
                         </td>
                     </tr>
                 @empty

@@ -44,6 +44,12 @@ class BirdForm extends Component
         $this->birdCount = $birdCount;
     }
 
+    #Delete Method
+    public function delete($id)
+    {
+        Entry::find($id)?->delete();
+    }
+
 
     public function render()
     {
