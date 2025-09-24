@@ -39,9 +39,9 @@ class BirdForm extends Component
 
     // Mount method is purposedly for getting a default data. in this case the default data is placed on the welcome.blade.php where the component is called.
     // mount also can bed used to get data from database or from the url parameter
-    public function mount($birdCount)
+    public function mount()
     {
-        $this->birdCount = $birdCount;
+        $this->birdCount = '0';
     }
 
     #Delete Method
